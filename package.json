@@ -1,0 +1,15 @@
+{
+  "name": "yeoggoker",
+  "version": "1.0.0",
+  "description": "Dining recommendations for *Yeoggokers*",
+  "scripts": {
+    "build": "node build.js",
+    "develop": "npm run build && node_modules/http-server/bin/http-server -p 3000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "toml": "^2.3.3"
+  }
+}
