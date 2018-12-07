@@ -20,7 +20,9 @@ Inspired by [somalife](https://github.com/swmaestro/somat).
 
 ## 코드를 고치고 싶다면
 
-- `git clone`하여 수정 후 풀 리퀘스트 넣어주세요!
+- `git clone`하여 코드를 수정합니다.
+- `npm run dev`로 서버를 띄워 잘 고쳐졌는지 확인합니다.
+- `npm run build` 후 풀 리퀘스트를 넣어주세요.
 
 ## 구조
 
