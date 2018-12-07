@@ -8,6 +8,8 @@ declare module daum.maps {
       container: HTMLElement,
       options?: { center: LatLng; level: number }
     );
+
+    panTo(latLng: LatLng): void;
   }
 
   export class InfoWindow {
@@ -25,4 +27,8 @@ declare module daum.maps {
   export class Marker {
     constructor(options: { map: Map; position: LatLng; clickable?: boolean });
   }
+
+  export const event: {
+    addListener: Function;
+  };
 }
