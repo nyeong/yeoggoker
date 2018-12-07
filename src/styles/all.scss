@@ -1,5 +1,6 @@
 @import "normalize";
 @import "variables";
+@import "typo";
 
 $sidebar-width: 220px;
 $sidebar-background: $grass-strong;
@@ -11,19 +12,6 @@ $contents-color-strong: $darkGray-strong;
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  word-break: keep-all;
 }
 
 #map-container {
@@ -53,6 +41,11 @@ h6 {
 }
 
 #sidebar-container {
+  h1 {
+    $shadow-color: rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 0px $shadow-color, 0px 1px $shadow-color,
+      -1px 0px $shadow-color, 0px -1px $shadow-color;
+  }
   transition: 0.2s ease transform;
   position: absolute;
   z-index: 5;
@@ -82,6 +75,11 @@ h6 {
     &.active {
       font-weight: bolder;
     }
+  }
+
+  aside {
+    margin-top: 2em;
+    line-height: 1;
   }
 }
 

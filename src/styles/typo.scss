@@ -1,0 +1,23 @@
+@import "variables";
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  word-break: keep-all;
+}
+
+a {
+  color: white;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 0.9em;
+  &:hover {
+    opacity: 0.6;
+  }
+}
